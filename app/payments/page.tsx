@@ -9,10 +9,6 @@ import Header from '@/components/Header'
 
 export default function PaymentsPage() {
   return (
-  <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100">
-    <Header />
-    <div className="p-8">
-      {/* existing content */}
   const [payments, setPayments] = useState<any[]>([])
   const [loading, setLoading] = useState(true)
 
@@ -55,6 +51,10 @@ export default function PaymentsPage() {
   }
 
   return (
+  <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100">
+    <Header />
+    <div className="p-8">
+      {/* existing content */}
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 p-8">
       <div className="max-w-7xl mx-auto">
         <div className="flex justify-between items-center mb-8">
