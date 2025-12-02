@@ -4,8 +4,15 @@ import { useEffect, useState } from 'react'
 import { supabase } from '@/lib/supabase'
 import { DollarSign, Plus } from 'lucide-react'
 import Link from 'next/link'
+import Header from '@/components/Header'
+
 
 export default function PaymentsPage() {
+  return (
+  <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100">
+    <Header />
+    <div className="p-8">
+      {/* existing content */}
   const [payments, setPayments] = useState<any[]>([])
   const [loading, setLoading] = useState(true)
 
