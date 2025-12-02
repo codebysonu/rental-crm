@@ -8,11 +8,6 @@ import Header from '@/components/Header'
 
 
 export default function NewPaymentPage() {
-  return (
-  <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100">
-    <Header />
-    <div className="p-8">
-      {/* existing content */}
   const router = useRouter()
   const [loading, setLoading] = useState(false)
   const [tenants, setTenants] = useState<any[]>([])
@@ -129,6 +124,10 @@ export default function NewPaymentPage() {
   }
 
   return (
+  <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100">
+    <Header />
+    <div className="p-8">
+      {/* existing content */}
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 p-8">
       <div className="max-w-3xl mx-auto">
         <div className="mb-8">
