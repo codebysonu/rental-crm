@@ -4,8 +4,15 @@ import { useState, useEffect } from 'react'
 import { supabase } from '@/lib/supabase'
 import { useRouter } from 'next/navigation'
 import Link from 'next/link'
+import Header from '@/components/Header'
+
 
 export default function NewTenantPage() {
+  return (
+  <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100">
+    <Header />
+    <div className="p-8">
+      {/* existing content */}
   const router = useRouter()
   const [loading, setLoading] = useState(false)
   const [units, setUnits] = useState<any[]>([])
